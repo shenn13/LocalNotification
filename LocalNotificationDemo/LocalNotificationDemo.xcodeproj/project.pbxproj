@@ -15,6 +15,7 @@
 		6407EC381E9F3D0800988A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6407EC361E9F3D0800988A01 /* LaunchScreen.storyboard */; };
 		6407EC431E9F3D0800988A01 /* LocalNotificationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407EC421E9F3D0800988A01 /* LocalNotificationDemoTests.m */; };
 		6407EC4E1E9F3D0800988A01 /* LocalNotificationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6407EC4D1E9F3D0800988A01 /* LocalNotificationDemoUITests.m */; };
+		64FCBCC71EC0308500AE3F75 /* LocialNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FCBCC61EC0308500AE3F75 /* LocialNotificationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		6407EC4D1E9F3D0800988A01 /* LocalNotificationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationDemoUITests.m; sourceTree = "<group>"; };
 		6407EC4F1E9F3D0800988A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6407EC5B1E9F3DA800988A01 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		64FCBCC51EC0308500AE3F75 /* LocialNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocialNotificationManager.h; sourceTree = "<group>"; };
+		64FCBCC61EC0308500AE3F75 /* LocialNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocialNotificationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 		6407EC271E9F3D0800988A01 /* LocalNotificationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				64FCBCC41EC0308500AE3F75 /* LocialNotificationManager */,
 				6407EC2B1E9F3D0800988A01 /* AppDelegate.h */,
 				6407EC2C1E9F3D0800988A01 /* AppDelegate.m */,
 				6407EC2E1E9F3D0800988A01 /* ViewController.h */,
@@ -140,6 +144,15 @@
 				6407EC4F1E9F3D0800988A01 /* Info.plist */,
 			);
 			path = LocalNotificationDemoUITests;
+			sourceTree = "<group>";
+		};
+		64FCBCC41EC0308500AE3F75 /* LocialNotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				64FCBCC51EC0308500AE3F75 /* LocialNotificationManager.h */,
+				64FCBCC61EC0308500AE3F75 /* LocialNotificationManager.m */,
+			);
+			path = LocialNotificationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FCBCC71EC0308500AE3F75 /* LocialNotificationManager.m in Sources */,
 				6407EC301E9F3D0800988A01 /* ViewController.m in Sources */,
 				6407EC2D1E9F3D0800988A01 /* AppDelegate.m in Sources */,
 				6407EC2A1E9F3D0800988A01 /* main.m in Sources */,
@@ -437,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenn13.LocalNotificationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -452,6 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenn13.LocalNotificationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -524,6 +540,7 @@
 				6407EC541E9F3D0800988A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6407EC551E9F3D0800988A01 /* Build configuration list for PBXNativeTarget "LocalNotificationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +549,7 @@
 				6407EC571E9F3D0800988A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6407EC581E9F3D0800988A01 /* Build configuration list for PBXNativeTarget "LocalNotificationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +558,7 @@
 				6407EC5A1E9F3D0800988A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
